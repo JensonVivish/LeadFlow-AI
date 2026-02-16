@@ -10,8 +10,8 @@ app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 587
 app.config["MAIL_USE_TLS"] = True
 
-app.config["MAIL_USERNAME"] = "s.jenson.vivish@gmail.com"
-app.config["MAIL_PASSWORD"] = "bjvu vavz xmje fjfc"
+app.config["MAIL_USERNAME"] = "#your email"
+app.config["MAIL_PASSWORD"] = "#app password"
 
 app.config["MAIL_DEFAULT_SENDER"] = app.config["MAIL_USERNAME"]
 
@@ -138,7 +138,7 @@ def chatbot():
             # -------------------------------
             msg = Message(
                 subject="📩 New Lead Received — LeadFlow AI",
-                recipients=["s.jenson.vivish@gmail.com"]
+                recipients=["#recipient_email_id"]
             )
 
             msg.html = html_body
@@ -162,4 +162,5 @@ def chatbot():
 # RUN SERVER
 # -------------------------------
 if __name__ == "__main__":
+
     app.run(debug=True)
